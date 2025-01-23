@@ -1,1 +1,3 @@
-# ⚡🐛 Test API Pokemon
+# ⚡🐛 Application d'affichage de Pokemon tirés au hasard depuis une API
+
+## En cours...
