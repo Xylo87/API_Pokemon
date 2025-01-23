@@ -3,8 +3,8 @@
 ## En cours...
 
 ## 1. Accès
-Le projet est en phase d'ajout de fonctionnalités, mais vous pouvez d'ores et déjà y accéder directement via [ce lien](https://xylo87.github.io/API_Pokemon/).
-L'API utilisée est gratuite et accessible via ce [lien](https://pokeapi.co/).
+Le projet est en phase d'ajout de fonctionnalités, mais vous pouvez d'ores et déjà y accéder directement via ce [lien](https://xylo87.github.io/API_Pokemon/).
+L'API utilisée est gratuite et accessible [ici](https://pokeapi.co/).
 
 ---
 
