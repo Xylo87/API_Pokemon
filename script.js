@@ -1,9 +1,17 @@
 
 const pokedex = document.getElementById("pokedex")
 
+const pokemon = document.createElement("div")
+const pokeTitle = document.createElement("h1")
+const pokeCanva = document.createElement("img")
 const pokeButton = document.createElement("button")
-pokeButton.innerText = "Get random Pokemon !"
+
+pokemon.classList.add("pokemon")
 pokeButton.classList.add("btn", "btn-success")
+pokeButton.innerText = "Get random Pokemon !"
+
+pokedex.append(pokemon)
+pokemon.append(pokeTitle, pokeCanva, pokeButton)
 
 async function call() {
 
@@ -11,22 +19,13 @@ async function call() {
     
     let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${randomNumber}`)
     let data = await response.json()
-    console.log(data)
+    // console.log(data)
     
     let pokeName = data.name
     let pokeFaceURL = data.sprites.front_default
     
-    const pokemon = document.createElement("div")
-    const pokeTitle = document.createElement("h1")
-    const pokeCanva = document.createElement("img")
-    
-    pokeTitle.innerText = pokeName
+    pokeTitle.textContent = pokeName
     pokeCanva.setAttribute("src", pokeFaceURL)
-    
-    pokemon.append(pokeTitle, pokeCanva, pokeButton)
-    pokedex.append(pokemon)
-    
-    pokemon.classList.add("pokemon")
 }
 
 
@@ -34,6 +33,5 @@ call()
 
 
 pokeButton.addEventListener('click', function () {
-    document.querySelector(".pokemon").remove()
     call()
 })
