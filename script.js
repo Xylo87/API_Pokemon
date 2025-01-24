@@ -23,6 +23,7 @@ async function call() {
     
     let pokeName = data.name
     let pokeFaceURL = data.sprites.front_default
+    // let pokeFaceURL = data.sprites.other.showdown.front_default
     
     pokeTitle.textContent = pokeName
     pokeCanva.setAttribute("src", pokeFaceURL)
