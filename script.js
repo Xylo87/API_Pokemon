@@ -23,10 +23,15 @@ async function call() {
     
     let pokeName = data.name
     let pokeFaceURL = data.sprites.front_default
-    // let pokeFaceURL = data.sprites.other.showdown.front_default
+    let pokeFaceURLGif = data.sprites.other.showdown.front_default
     
     pokeTitle.textContent = pokeName
-    pokeCanva.setAttribute("src", pokeFaceURL)
+
+    if (pokeFaceURLGif) {
+        pokeCanva.setAttribute("src", pokeFaceURLGif)
+    } else {
+        pokeCanva.setAttribute("src", pokeFaceURL)
+    }
 }
 
 
