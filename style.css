@@ -30,7 +30,7 @@ body {
 }
 
 .pokemon h1 {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     font-family: "Pokemon Solid";
     letter-spacing: 3px;
     font-size: 400%;
@@ -51,6 +51,7 @@ body {
 
 @media screen and (max-width: 960px) {
     .pokemon h1 {
+        margin-bottom: 25px;
         font-size: 200%;
         font-weight: 700;
         -webkit-text-stroke: 1px #3560ab;
