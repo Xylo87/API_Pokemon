@@ -10,6 +10,7 @@ Le nom du Pokemon est également affiché de manière dynamique, en utilisant un
 ## 2. Fonctionnalités
 - Un bouton pour un lancer la "randomization".
 L'aléatoire est géré au niveau du **JavaScript** avec les méthodes `Math.floor(Math.random())` sur le nombre total de Pokemons disponibles via l'API (au nombre de 1025 à la date de réalisation de l'application).
+Un minimum de style a été ajouté au bouton via des classes du framework BootStrap.
 
 - **Responsive Design** : l'application a été légèrement adaptée pour les utlisateurs mobile (ex. taille des noms des Pokemons)
 
